@@ -1,0 +1,520 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #0069d9;  /* Bleu plus foncé pour la barre d'en-tête */
+    color: #fff;
+}
+
+.u-name {
+    font-size: 20px;
+    padding-left: 17px;
+}
+
+.u-name b {
+    color: #fff;
+}
+
+.header i {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header i:hover {
+    color: #ffffff;
+}
+
+.user-p {
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 25px;
+}
+
+.user-p img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.user-p h4 {
+    color: #fff;
+    padding: 5px 0;
+}
+
+.side-bar {
+    width: 250px;
+    background: #0069d9; /* Bleu plus foncé pour la sidebar */
+    min-height: 100vh;
+    transition: 500ms width;
+}
+
+/* ======= Ajout du Background Image ======= */
+body {
+ body {
+    background-image: url('images/im2.jpg') no-repeat center center fixed;
+}
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.side-bar ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.side-bar ul li {
+    font-size: 16px;
+    padding: 15px 0px;
+    padding-left: 20px;
+    transition: 500ms background;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.side-bar ul li:hover {
+    background: #0056b3; /* Changement léger au survol */
+}
+
+.side-bar ul li a {
+    text-decoration: none;
+    color: #eee;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.side-bar ul li a i {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 23px;
+}
+
+#navbtn {
+    display: inline-block;
+    margin-left: 70px;
+    font-size: 20px;
+    transition: 500ms color;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked ~ .body .side-bar {
+    width: 60px;
+}
+
+#checkbox:checked ~ .body .side-bar .user-p{
+    visibility: hidden;
+}
+
+#checkbox:checked ~ .body .side-bar a span{
+    display: none;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color:  #0069d9;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #0069d9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background:  #0069d9;
+    color: white;
+}
+
+td {
+    background: white;
+}
+
+.employee-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #4b8ce4; /* Bleu plus clair pour les boutons */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #0069d9;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 20px;
+}
+
+#pointer {
+    padding: 12px 20px;
+    background-color: #0069d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pointer:hover {
+    background-color: #0056b3;
+}
+
+.btn-item {
+    text-align: center;
+    width: 220px;
+}
+
+.btn-icon {
+    width: 230px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    background: linear-gradient(135deg, #1b65b9, #082648);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux boutons par ligne */
+    gap: 20px; /* Espacement entre les boutons */
+    justify-items: center;
+    align-items: center;
+    padding: 90px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+    background: linear-gradient(135deg, #1b65b9  ,#082648);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.side-bar {
+    width: 250px;
+    background-image: url('images/ff.jpg');
+    background-size: cover;  /* Assure que l'image couvre toute la zone */
+
+    min-height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    color: white;
+    padding-top: 30px;
+    transition: 0.3s;
+}
+
+.header {
+    background-color: #012c5d;
+    background-size: cover;  /* Assure que l'image couvre toute la zone */
+    background-position: center;  /* Centrer l'image */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.user-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-p img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-p h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.side-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-bar ul li {
+    margin: 10px -18px;
+    transition: background-color 0.3s;
+}
+
+.side-bar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.side-bar ul li a i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.side-bar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.side-bar ul li a:hover {
+    color: #ffd700;
+}
+
+/* Collapse sidebar */
+#checkbox:checked ~ .body .side-bar {
+    width: 60px;
+}
+
+#checkbox:checked ~ .body .side-bar .user-p,
+#checkbox:checked ~ .body .side-bar a span {
+    display: none;
+}
+
+
+/* Conteneur pour les icônes de notification et messagerie */
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Style pour chaque icône dans l'en-tête (messagerie, notifications) */
+.header-icon {
+    color: #fff;
+    font-size: 20px;
+    position: relative; /* Nécessaire pour positionner le badge */
+}
+
+.header-icon:hover {
+    color: #ffeb3b; /* Changer la couleur au survol */
+}
+
+/* Badge pour les notifications non lues */
+.header-icon .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+    padding: 3px 6px;
+    min-width: 18px;
+    text-align: center;
+}
+
+
+/* Media Queries pour la version mobile *//* === Media Queries pour la version mobile === */
+@media (max-width: 768px) {
+    .side-bar {
+        width: 200px; /* Réduire la taille de la sidebar sur mobile */
+    }
+
+    .header {
+        padding: 10px 15px;
+    }
+
+    .header-actions {
+        flex-direction: column; /* Empiler les éléments sur mobile */
+        align-items: center;
+    }
+
+    .header i {
+        font-size: 25px; /* Réduire la taille de l'icône */
+    }
+
+    .btn-container {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .btn-primary {
+        height: 200px;
+        font-size: 24px;
+    }
+
+    .user-p img {
+        width: 80px; /* Réduire la taille de l'image */
+    }
+
+    /* Réduire la taille des polices et ajuster l'affichage sur mobile */
+    table, th, td {
+        font-size: 14px;
+    }
+
+    /* Modifier l'affichage des boutons sur les écrans plus petits */
+    .btn {
+        width: 100%; /* Faire en sorte que les boutons prennent toute la largeur */
+        margin-bottom: 10px; /* Ajouter un peu d'espace entre les boutons */
+        font-size: 18px; /* Ajuster la taille des boutons */
+    }
+
+    .header-icons {
+        flex-direction: column; /* Empiler les icônes sur les petits écrans */
+        gap: 10px;
+    }
+
+    .header-icon {
+        font-size: 18px; /* Réduire la taille des icônes */
+    }
+
+    .container {
+        width: 90%; /* Réduire la largeur de la zone de contenu */
+        padding: 15px; /* Réduire les marges intérieures */
+    }
+
+    .side-bar ul li {
+        padding: 12px 0px; /* Ajuster le padding des éléments de la sidebar */
+    }
+}

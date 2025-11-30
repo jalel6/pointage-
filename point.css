@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden; /* Pour éviter les débordements de l'image de fond */
+    color: #333;
+}
+
+/* Ajout de l'image de fond floutée via ::before */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/pp.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px); /* Applique un flou plus doux */
+    z-index: -1; /* Assure que l'image de fond floutée est derrière le contenu */
+}
+
+/* Contenu principal de la page */
+.profile-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    position: relative;
+    z-index: 1; /* Le contenu est au-dessus de l'image floue */
+    padding: 20px;
+}
+
+/* Style du container pour le formulaire */
+.container {
+    background: rgba(0, 0, 0, 0.6); /* Couleur plus douce avec transparence */
+    border-radius: 100px;
+    padding: 40px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Style de la vidéo (caméra) */
+.video-container {
+    margin-bottom: 25px;
+}
+
+video {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulaire et boutons */
+.form-group {
+    margin-bottom: 25px;
+}
+
+button {
+    background-color:#083b71; /* Un bleu plus moderne et plus doux */
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 50px; /* Arrondir davantage pour un look plus moderne */
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    width: 100%;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #0052a3;
+    transform: scale(1.05); /* Ajouter un effet de mise en valeur au survol */
+}
+
+/* Message après action */
+.message {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+
+/* Amélioration du comportement sur mobile */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .back-btn {
+        font-size: 14px;
+        top: 15px;
+        left: 15px;
+    }
+}

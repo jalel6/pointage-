@@ -1,0 +1,119 @@
+/* Styles généraux */
+
+/* CORPS AVEC GRADIENT ET IMAGE FLOUE EN ARRIÈRE-PLAN */
+body {
+    background: linear-gradient(to right, #e6f0fa, #ffffff);
+    color: #333;
+    padding: 3px;
+    min-height: 100vh;
+    position: relative;
+    display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/em.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Conteneur principal avec effet de transparence */
+.container {
+    background: rgba(39, 64, 101, 0.8); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    backdrop-filter: blur(10px); /* Ajoute un effet de flou derrière */
+}
+
+.back-btn {
+    position: fixed; /* Utilise fixed pour le garder en haut à gauche même lors du défilement */
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background: #083b71;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 14px;
+    width: auto;
+    z-index: 10; /* Assure que le bouton est au-dessus du contenu */
+}
+
+.back-btn i {
+    margin-right: 8px;
+}
+
+/* Effet au survol du bouton */
+.back-btn:hover {
+    background-color: #055085; /* Un bleu légèrement plus foncé pour l'effet hover */
+    transform: translateY(-3px);
+}
+/* Titre */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Groupes d'input avec icônes */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px 10px 12px 30px; /* Ajout de padding pour tenir compte des icônes */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-group select {
+    font-size: 16px;
+}.button-group {
+    display: flex;
+    justify-content: space-between; /* Pour espacer les deux boutons */
+    gap: 10px; /* Petit espace entre les boutons */
+    margin-top: 20px;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+    
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,380 @@
+body {
+    background: linear-gradient(to right, #e6f0fa, #ffffff);
+    color: #333;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/em.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Conteneur principal */
+.container {
+    background: rgba(39, 64, 101, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 480px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+/* Titre */
+
+/* Labels */
+label {
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Champs */
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Groupe de boutons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-suivant,
+.btn-retour {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-suivant {
+    background-color: #083b71;
+}
+
+.btn-retour {
+    background-color: #8f2630;
+}
+
+.btn-suivant:hover,
+.btn-retour:hover {
+    opacity: 0.95;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-suivant:active,
+.btn-retour:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+}    body {
+    background: linear-gradient(to right, #e6f0fa, #ffffff);
+    color: #333;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/em.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Conteneur principal */
+.container {
+    background: rgba(39, 64, 101, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 480px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Champs */
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Groupe de boutons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-suivant,
+.btn-retour {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-suivant {
+    background-color: #083b71;
+}
+
+.btn-retour {
+    background-color: #8f2630;
+}
+
+.btn-suivant:hover,
+.btn-retour:hover {
+    opacity: 0.95;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-suivant:active,
+.btn-retour:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+}    body {
+    background: linear-gradient(to right, #e6f0fa, #ffffff);
+    color: #333;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/em.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Conteneur principal */
+.container {
+    background: rgba(39, 64, 101, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 480px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Champs */
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Groupe de boutons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-suivant,
+.btn-retour {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-suivant {
+    background-color: #083b71;
+}
+
+.btn-retour {
+    background-color: #8f2630;
+}
+
+.btn-suivant:hover,
+.btn-retour:hover {
+    opacity: 0.95;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-suivant:active,
+.btn-retour:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+}

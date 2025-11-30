@@ -1,0 +1,95 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur principal */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #555;
+}
+
+/* Champs de saisie */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: white;
+}
+
+/* Désactiver les champs non modifiables */
+input[disabled] {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Boutons */
+button, a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Bouton Enregistrer */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Bouton Annuler */
+a {
+    background-color: #6c757d;
+    color: white;
+}
+
+a:hover {
+    background-color: #5a6268;
+}

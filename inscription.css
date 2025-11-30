@@ -1,0 +1,159 @@
+/* ======= Centrer le formulaire sur la page ======= */
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/img.jpg') no-repeat center center fixed; /* Image de fond */
+   
+    background-size: cover; /* Couvre toute la page */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+/* ======= Styles du conteneur du formulaire ======= */
+form {
+    background: #f1eeee;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    text-align: left;
+}
+
+/* ======= Styles des champs avec icônes ======= */
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Titre "Inscription" */
+.input-group h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #007bff;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Icones dans les champs de saisie */
+.input-group i {
+    position: absolute;
+    left: 15px;
+    color: #007bff;
+    font-size: 16px;
+}
+
+/* ======= Champs de saisie ======= */
+input, select {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* Espace à gauche pour l'icône */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+/* Effet focus sur les champs */
+input:focus, select:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* ======= Bouton ======= */
+button {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Effet hover */
+button:hover {
+    background: #0056b3;
+}
+
+/* Effet clic */
+button:active {
+    transform: scale(0.98);
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 500px) {
+    body {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+/* ======= Bouton Retour ======= */
+.btn-retour {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espacement entre l'icône et le texte */
+    padding: 10px 15px;
+    background-color: #007bff; /* Bleu principal */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.btn-retour i {
+    font-size: 18px;
+}
+
+.btn-retour:hover {
+    background-color: #0056b3; /* Bleu foncé au survol */
+}
+/* ======= Boutons ======= */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espacement entre les boutons */
+    margin-top: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Bleu principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Bleu plus foncé au survol */
+}
+

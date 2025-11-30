@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden; /* Pour éviter les débordements de l'image de fond */
+}
+
+/* Ajout de l'image de fond floutée via ::before */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/de.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Applique le flou sur l'image de fond */
+    z-index: -1; /* Assure que l'image de fond floutée est derrière le contenu */
+}
+
+/* Contenu principal de la page */
+.profile-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    position: relative;
+    z-index: 1; /* Le contenu est au-dessus de l'image floue */
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Contenu du formulaire */
+.form-content {
+    padding: 40px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Champs du formulaire */
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f9f9f9;
+    color: #555;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus {
+    border-color: #333;
+    background-color: #fff;
+}
+
+.input-box textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Bouton de soumission */
+button {
+    width: 100%;
+    padding: 14px;
+    background:#083b71;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background:#083b71;
+}
+
+/* Contenu de l'image */
+.image-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: 100%; /* S'ajuste à la hauteur totale */
+    object-fit: cover; /* S'assure que l'image couvre toute la zone sans déformation */
+    border-radius: 12px;
+}
+
+
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .form-content,
+    .image-content {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .input-box input,
+    .input-box select,
+    .input-box textarea {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    .back-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}

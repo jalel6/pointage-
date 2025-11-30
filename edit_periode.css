@@ -1,0 +1,175 @@
+/* Global Styles */
+
+/* Corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background: url('images/timm.jpg') no-repeat center center fixed;
+    overflow: hidden; /* Pour éviter les débordements de l'image de fond */
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.95); /* fond blanc légèrement transparent */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+    backdrop-filter: blur(4px); /* effet flouté en arrière-plan */
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+
+/* Contenu de l'image */
+.image-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: 100%; /* S'ajuste à la hauteur totale */
+    object-fit: cover; /* S'assure que l'image couvre toute la zone sans déformation */
+    border-radius: 12px;
+}
+
+
+.back-btn {
+    position: fixed; /* Utilise fixed pour le garder en haut à gauche même lors du défilement */
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background: #083b71;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 14px;
+    width: auto;
+    z-index: 10; /* Assure que le bouton est au-dessus du contenu */
+}
+
+.back-btn i {
+    margin-right: 8px;
+}
+
+/* Effet au survol du bouton */
+.back-btn:hover {
+    background-color: #055085; /* Un bleu légèrement plus foncé pour l'effet hover */
+    transform: translateY(-3px);
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    color:#083b71;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Utiliser toute la largeur du formulaire */
+    width: 100%;
+}
+
+.form-group {
+    width: 100%; /* Occupe toute la largeur du formulaire */
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Occupe toute la largeur du formulaire */
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease-in-out;
+    box-sizing: border-box; /* Assure que le padding est inclus dans la largeur */
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Button Styles */
+button {
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color:#083b71;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%; /* Le bouton prend toute la largeur */
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* SweetAlert2 Custom Styles */
+.swal2-popup {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+/* Add a subtle shadow to inputs */
+input[type="text"], input[type="date"] {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust padding and margins for form inputs */
+input[type="text"], input[type="date"], button {
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
