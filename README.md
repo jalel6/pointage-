@@ -1,5 +1,12 @@
 # 📌 README -- Système de Gestion du Personnel
 
+
+
+<img width="1931" height="1084" alt="image" src="https://github.com/user-attachments/assets/8549921c-50ce-438b-92b4-1e673749a763" />
+<img width="1892" height="1038" alt="image" src="https://github.com/user-attachments/assets/1c9af607-17b4-4c63-9eba-3cc09e0f0203" />
+
+
+
 ## 📖 Description du projet
 
 Ce projet est une application web permettant la **gestion du personnel**
