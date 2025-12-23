@@ -1,5 +1,6 @@
 # 📌 README -- Système de Gestion du Personnel
-<img width="1748" height="1124" alt="image" src="https://github.com/user-attachments/assets/b2f13262-d57f-4377-83a0-ab8a6123b36a" />
+<img width="1584" height="742" alt="Screenshot 2025-12-23 223436" src="https://github.com/user-attachments/assets/e6ccb126-6bd0-4ff9-944c-479fd71cc1b5" />
+
 <img width="1500" height="754" alt="Screenshot 2025-12-23 222156" src="https://github.com/user-attachments/assets/ba531aa8-41f5-4b67-b0ee-fd3906a56b1d" />
 <img width="1599" height="782" alt="Screenshot 2025-12-23 221543" src="https://github.com/user-attachments/assets/c389f1d2-bb2a-4d0e-bef1-ca7f599cdd47" />
 <img width="1312" height="764" alt="Screenshot 2025-12-23 222303" src="https://github.com/user-attachments/assets/74a28d55-282e-4852-826f-4d7024ed849b" />
