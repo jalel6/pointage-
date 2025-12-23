@@ -60,7 +60,7 @@ Principaux fichiers : - `admin_dashboard.php` -
 ## 🛠️ Technologies utilisées
 
 -   PHP\
--   MySQL / MariaDB\
+-   MySQL / 
 -   HTML / CSS\
 -   JavaScript\
 -   Docker & Apache
